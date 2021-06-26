@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "pdk",
+  "version": "${version}",
+
+  "name": "PythonCraftDK",
+  "description": "The development kit of PythonCraft, a new generation Minecraft modding API.",
+  "authors": [
+    "kworker"
+  ],
+  "contact": {
+    "homepage": "https://frankyang6921.github.io/",
+    "sources": "https://github.com/FrankYang6921/pythoncraft-pdk"
+  },
+
+  "license": "GPLv3",
+  "icon": "assets/pdk/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "top.frankyang.pdk.Main"
+    ]
+  },
+  "mixins": [
+    "pdk.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "fabric": "*",
+    "minecraft": "1.x.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
